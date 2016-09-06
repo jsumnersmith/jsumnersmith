@@ -21,6 +21,12 @@ var articles = [
   //   description: ''
   // }
   {
+    title: "Show, Don't Tell",
+    url: 'https://medium.com/@jsumnersmith/show-dont-tell-d66e05e3545b#.dufrexh2r',
+    description: "A meditation on the word show.",
+    source: 'Read on Medium'
+  },
+  {
     title: 'Notes on The Solipsism of the Prophet-Novelist in Roth',
     url: 'https://medium.com/@jsumnersmith/notes-on-the-solipsism-of-the-prophet-novelist-in-roth-cbe940783cc9#.75xg0xdbl',
     description: "About what a novelist might mean in relationship to society.",
