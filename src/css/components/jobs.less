@@ -1,0 +1,22 @@
+// Styles for jobs React component
+
+.jss-job, .jss-degree {
+  border-bottom: 5px solid @blue-light;
+  .padding(2);
+  & + & { .margin-top(2); }
+  h4 { font-family: "Source Code Pro", monospace;}
+}
+
+.jss-project {
+  display: block;
+  position: relative;
+  color: @white;
+  .padding(.5);
+  .margin-left(1.5);
+  &:before {
+    content: " ~ ";
+    position: absolute;
+    text-decoration: none;
+    .left(-1);
+  }
+}

@@ -1,11 +1,10 @@
 
 // Layout Functionality
-.rb-inner
+.jss-inner
 {
   width: 100%;
-  .padding-right(1);
-  .padding-left(1);
-  .margin-bottom(5);
+  // .padding-right(1);
+  // .padding-left(1);
 }
 
 /* Grid System */
@@ -18,24 +17,24 @@
   width: 100% / 12 * @columnSize;
 }
 
-.rb-grid
+.jss-grid
 {
   display: inline-block;
   width: 100%;
   font-size: 0; //font-size:0 here makes the columns bump up next to one another
 
-  [class*='rb-col-']{ .col(); }
+  [class*='jss-col-']{ .col(); }
 
-  .rb-col-1 { .col(1); }
-  .rb-col-2 { .col(2); }
-  .rb-col-3 { .col(3); }
-  .rb-col-4 { .col(4); }
-  .rb-col-5 { .col(5); }
-  .rb-col-6 { .col(6); }
-  .rb-col-7 { .col(7); }
-  .rb-col-8 { .col(8); }
-  .rb-col-9 { .col(9); }
-  .rb-col-10 { .col(10); }
-  .rb-col-11 { .col(11); }
-  .rb-col-12 { .col(12); }
+  .jss-col-1 { .col(1); }
+  .jss-col-2 { .col(2); }
+  .jss-col-3 { .col(3); }
+  .jss-col-4 { .col(4); }
+  .jss-col-5 { .col(5); }
+  .jss-col-6 { .col(6); }
+  .jss-col-7 { .col(7); }
+  .jss-col-8 { .col(8); }
+  .jss-col-9 { .col(9); }
+  .jss-col-10 { .col(10); }
+  .jss-col-11 { .col(11); }
+  .jss-col-12 { .col(12); }
 }

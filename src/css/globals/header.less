@@ -1,19 +1,52 @@
 // Global Header Styles
-.rb-header-logo
+.jss-header-logo
 {
+  position: relative;
+  height: 100vh;
   .padding(1);
   .padding-top(.25);
   .padding-bottom(1);
-  color: @white;
-  background: @navy;
-  .rb-h2 {
-    display: inline-block;
+  color: @navy;
+  max-width: 100vw;
+  overflow-x: hidden;
+  hr {
+    height: 10px;
+    width: 25vw;
+    .margin-top(2);
+    .margin-bottom(2);
+    margin-left: auto;
+    margin-right: auto;
+    background: @navy;
+    border: none;
+  }
+  .jss-title {
+    display: block;
     .margin-bottom(0);
-    .line-height(2);
+    .line-height(8);
+    text-align: center;
+    .font-size(6);
+  }
+  .jss-subtitle {
+    font-family: 'Source Code Pro', monospace;
+    .font-size(2);
+    text-align: center;
+  }
+  &:after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-left: 100vw solid transparent;
+    border-right: 100vw solid transparent;
+    border-top: 100vh solid @blue-light;
+    max-width: 100vw;
   }
 }
 
-.rb-header-state
+.jss-header-state
 {
   .padding(.2);
   .padding-right(2);
@@ -25,4 +58,4 @@
   .material-icons {.margin-right(.2);}
 }
 
-.rb-header .material-icons {color: @white;}
+.jss-header .material-icons {color: @white;}

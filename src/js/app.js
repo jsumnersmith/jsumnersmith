@@ -1,15 +1,30 @@
 //Main bootstrapping file.
 var React = require('react');
 var ReactDOM = require('react-dom');
-var App = require('./components/app.react');
-var BoilerplateAppApi = require('./data/BoilerplateAppApi');
-
-//Initially, load any data here.
-BoilerplateAppApi.load(function(data){
-  console.log(data);
-});
+var Articles = require('./components/articles.react');
+var Links = require('./components/links.react');
+var Jobs = require('./components/jobs.react');
+var Education = require('./components/education.react');
+var Data = require('./data/api.js');
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('app-mount')
+  <Articles articles={Data.articles()}/>,
+  document.getElementById('articles')
+);
+
+ReactDOM.render(
+  <Links links={Data.links()}/>,
+  document.getElementById('links')
+);
+
+ReactDOM.render(
+  <Jobs jobs={Data.jobs()}/>,
+  document.getElementById('jobs')
+);
+
+console.log(Data.education());
+
+ReactDOM.render(
+  <Education education={Data.education()}/>,
+  document.getElementById('education')
 );
