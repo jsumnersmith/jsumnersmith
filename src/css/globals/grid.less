@@ -37,4 +37,11 @@
   .jss-col-10 { .col(10); }
   .jss-col-11 { .col(11); }
   .jss-col-12 { .col(12); }
+
+}
+
+@media screen and (max-width: 750px){
+  [class*='jss-col-']{
+    width: 100% !important;
+  }
 }
