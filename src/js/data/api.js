@@ -50,6 +50,10 @@ var links = [
     svg: 'images/github.svg'
   },
   {
+    url: 'https://dribbble.com/jsumnersmith',
+    svg: 'images/dribbble.svg'
+  },
+  {
     url: 'https://twitter.com/jsumnersmith',
     svg: 'images/twitter.svg'
   }
