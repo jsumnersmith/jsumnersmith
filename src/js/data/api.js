@@ -27,6 +27,12 @@ var articles = [
     source: 'Read on Medium'
   },
   {
+    title: "On Work",
+    url: 'https://medium.com/@jsumnersmith/on-working-d05843a0a8b5#.kh17rsjjk',
+    description: "How a poem reached beyond my initial reading.",
+    source: 'Read on Medium'
+  },
+  {
     title: 'Notes on The Solipsism of the Prophet-Novelist in Roth',
     url: 'https://medium.com/@jsumnersmith/notes-on-the-solipsism-of-the-prophet-novelist-in-roth-cbe940783cc9#.75xg0xdbl',
     description: "About what a novelist might mean in relationship to society.",
