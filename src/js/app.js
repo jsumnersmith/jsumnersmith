@@ -22,8 +22,6 @@ ReactDOM.render(
   document.getElementById('jobs')
 );
 
-console.log(Data.education());
-
 ReactDOM.render(
   <Education education={Data.education()}/>,
   document.getElementById('education')
