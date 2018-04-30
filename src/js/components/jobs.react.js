@@ -2,11 +2,12 @@ var React = require('react');
 
 var Jobs = React.createClass({
   render: function(){
+    console.log(this.props);
     return(
       <div className="jss-jobs jss-grid">
         {
           this.props.jobs.map(function(job){
-            return <Job job={job} key={job.title}/>
+            return <Job job={job} key={`${job.title}${job.description}`}/>
           })
         }
       </div>

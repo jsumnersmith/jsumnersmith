@@ -1,5 +1,4 @@
 module.exports = {
-  // Method for creating VM
   articles: function(){
     return articles;
   },
@@ -82,6 +81,11 @@ var jobs = [
   //     }
   //   ]
   // }
+  {
+    title: 'Kickup',
+    description: 'Product Manager',
+    projects: []
+  },
   {
     title: 'Kickup',
     description: 'Frontend Engineer: Django, React, LESS',
